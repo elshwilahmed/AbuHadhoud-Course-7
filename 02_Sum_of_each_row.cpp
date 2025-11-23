@@ -1,14 +1,10 @@
-
-/*
-    Write a program to fill a 3x3 Matrix with random numbers
-*/
-
-
 #include <iostream>
 #include <bits/stdc++.h>
-
+// #include<ext/pb_ds/assoc_container.hpp>
+// #include<ext/pb_ds/tree_policy.hpp>
 using namespace std;
-
+// using namespace __gnu_pbds;
+// typedef tree <int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_update> ordered_set;
 
 //*-------------------------------------------*
 void fastIO(void) {
@@ -21,20 +17,33 @@ int RandomNumber(int from, int to) {
 }
 
 void Set2dArrayElementsWithRandomNumbers(short r, short c, vector<vector<int>>& v) {
-    for (int i = 0;i < r;i++) {
-        for (int j = 0;j < c;j++) {
+    for (short i = 0;i < r;i++) {
+        for (short j = 0;j < c;j++) {
             int a = RandomNumber(1, 100);
             v[i][j] = a;
         }
     }
 }
+
 void Print2dArrayElements(short r, short c, vector<vector<int>>& v) {
     cout << "The following is a "<<r<<"*"<<c<<" random matrix: \n";
-    for (int i = 0;i < r;i++ ) {
-        for (int j = 0;j < c;j++) {
+    for (short i = 0;i < r;i++ ) {
+        for (short j = 0;j < c;j++) {
             cout << v[i][j] << ' ';
         }
         cout << endl;
+    }
+}
+
+void SumOfEachRowIn2DArray(short r, short c, vector<vector<int>>& v) {
+    cout << "The following are the sum of each row: \n";
+    for (short i = 0;i < r;i++ ) {
+        int sum = 0;
+        for (short j = 0;j < c;j++) {
+            sum += v[i][j];
+        }
+        cout << "Row "<< i+1 <<" Sum = "
+        << sum << endl;
     }
 }
 
@@ -42,6 +51,7 @@ void njr() {
     vector<vector<int>> v(3, vector<int>(3));
     Set2dArrayElementsWithRandomNumbers(3, 3, v);
     Print2dArrayElements(3, 3, v);
+    SumOfEachRowIn2DArray(3, 3, v);
 }
 
 
