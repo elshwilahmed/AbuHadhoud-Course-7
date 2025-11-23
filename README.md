@@ -25,9 +25,4 @@ This level focuses heavily on **2D Arrays (Matrices)**, logical thinking, and ma
 ## 📂 Repository Structure
 Each problem is solved in a separate `.cpp` file, named according to the problem topic/number.
 
-```text
-├── Problem_01_3x3_Random_Matrix.cpp
-├── Problem_02_Sum_Each_Row.cpp
-├── Problem_03_Sum_Each_Row_Array.cpp
-...
-├── README.md
+
