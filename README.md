@@ -1,8 +1,6 @@
 # AbuHadhoud-Course-7
 # 🚀 Algorithms & Problem Solving Level 3 Solutions
 
-![C++](https://img.shields.io/badge/Language-C++17-blue.svg) ![Course](https://img.shields.io/badge/Course-Level%203-green.svg) ![Instructor](https://img.shields.io/badge/Instructor-Mohamed%20Abu%20Hadhoud-orange.svg)
-
 Welcome to my repository for **Algorithms & Problem Solving Level 3** (Course 7) by **Eng. Mohamed Abu Hadhoud** (ProgrammingAdvices). This repo contains clean, optimized, and modular C++ solutions for all the problems in the course.
 
 ## 📚 About The Course
