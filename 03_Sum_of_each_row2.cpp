@@ -1,11 +1,11 @@
 /*
-Write a program to fill a 3x3 Matrix with random numbers and print sum each row
+    Write a program to fill a 3x3 Matrix with random numbers, then sum each row in seperate array and print results
 */
-
 #include <iostream>
 #include <bits/stdc++.h>
 
 using namespace std;
+
 
 //*-------------------------------------------*
 void fastIO(void) {
@@ -36,23 +36,30 @@ void Print2dArrayElements(short r, short c, vector<vector<int>>& v) {
     }
 }
 
-void SumOfEachRowIn2DArray(short r, short c, vector<vector<int>>& v) {
-    cout << "The following are the sum of each row: \n";
+vector<int> SumOfEachRowIn2DArray(short r, short c, vector<vector<int>>& v) {
+    vector<int> res;
     for (short i = 0;i < r;i++ ) {
         int sum = 0;
         for (short j = 0;j < c;j++) {
             sum += v[i][j];
         }
-        cout << "Row "<< i+1 <<" Sum = "
-        << sum << endl;
+        res.push_back(sum);
+    }
+return res;
+}
+void PrintSumOfEachRowFromArray(vector<int>& res){
+    cout << "The following are the sum of each row: \n";
+    for(short i =0; i < res.size(); i++) {
+        cout << "Row: " << i+1 << " = " << res[i] << endl;
     }
 }
-
 void njr() {
+    srand((unsigned)time(NULL));
     vector<vector<int>> v(3, vector<int>(3));
     Set2dArrayElementsWithRandomNumbers(3, 3, v);
     Print2dArrayElements(3, 3, v);
-    SumOfEachRowIn2DArray(3, 3, v);
+    vector<int> sum_of_each_row = SumOfEachRowIn2DArray(3, 3, v);
+    PrintSumOfEachRowFromArray(sum_of_each_row);
 }
 
 
@@ -71,3 +78,7 @@ signed main() {
 
 
 
+// TIP See CLion help at <a
+// href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>.
+//  Also, you can try interactive lessons for CLion by selecting
+//  'Help | Learn IDE Features' from the main menu.
