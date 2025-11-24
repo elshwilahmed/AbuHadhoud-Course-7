@@ -49,6 +49,7 @@ void SumOfEachRowIn2DArray(short r, short c, vector<vector<int>>& v) {
 }
 
 void njr() {
+    srand((unsigned)time(NULL));    
     vector<vector<int>> v(3, vector<int>(3));
     Set2dArrayElementsWithRandomNumbers(3, 3, v);
     Print2dArrayElements(3, 3, v);
@@ -71,3 +72,10 @@ signed main() {
 
 
 
+<<<<<<< HEAD
+=======
+// TIP See CLion help at <a
+// href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>.
+//  Also, you can try interactive lessons for CLion by selecting
+//  'Help | Learn IDE Features' from the main menu.
+>>>>>>> 5289d2271c0f75022b7d08f9d7b9d0d232a133ec
