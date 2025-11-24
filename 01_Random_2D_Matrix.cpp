@@ -39,6 +39,7 @@ void Print2dArrayElements(short r, short c, vector<vector<int>>& v) {
 }
 
 void njr() {
+    srand((unsigned)time(NULL));    
     vector<vector<int>> v(3, vector<int>(3));
     Set2dArrayElementsWithRandomNumbers(3, 3, v);
     Print2dArrayElements(3, 3, v);
