@@ -15,21 +15,6 @@ void fastIO(void) {
 
 //*-------------------------------------------*
 
-// iterative
-void PrintFibonacciUsingLoop(short Number) {
-    int FebNumber = 0;
-    int Prev2 = 0, Prev1 = 1;
-    cout << "1 ";
-    for (short i = 2; i <= Number; ++i) {
-        FebNumber = Prev1 + Prev2;
-        cout << FebNumber << " ";
-        Prev2 = Prev1;
-        Prev1 = FebNumber;
-    }
-}
-// _______________________________________________________________________________________________________________
-// recursion
-
 int Fibonacci(short n) {
     if (n <= 1) return n;
     return Fibonacci(n - 1) + Fibonacci(n - 2);
@@ -42,7 +27,6 @@ void PrintFibonacciUsingRecursion(short n) {
 }
 
 void njr() {
-    //PrintFibonacciUsingLoop(10);
     PrintFibonacciUsingRecursion(10);
 }
 
